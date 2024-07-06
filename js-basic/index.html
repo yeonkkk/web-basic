@@ -4,8 +4,10 @@
         <meta charset="UTF-8">
         <title> Document </title>
         <link rel="stylesheet" href="main.css">
+
     </head>
     <body>
+
         <div class="alert-box" id="alert"> 
             <p id="tittle"> Alert 박스 </p>
             <button id="close"> x </button>
@@ -27,6 +29,26 @@
             document.getElementById('close').addEventListener('click', function(){
                 document.getElementById('alert').style.display='none';
             })
+
+        </script>
+
+        <script 
+        src="https://code.jquery.com/jquery-3.7.1.min.js" 
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+        crossorigin="anonymous"></script>
+        
+        <h4 id="test"> 안녕하세요 </h4>
+
+        <script>
+
+            // id 셀렉터
+            $('#test').html('안녕');
+
+            // class 셀렉터
+            // $('.test')
+
+            $('#test').css('color', 'red');
+            $('#test').addClass('yellow-bg')
 
         </script>
 
