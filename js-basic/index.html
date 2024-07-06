@@ -8,7 +8,7 @@
     <body>
         <div class="alert-box" id="alert"> 
             <p id="tittle"> Alert 박스 </p>
-            <button onclick="openAlert('none')"> 닫기 </button>
+            <button id="close"> x </button>
         </div>
 
         <button onclick="viewAlert('아이디')"> 버튼1 </button>
@@ -23,6 +23,10 @@
                 document.getElementById('tittle').innerText = content + ' 입력 안 하셨습니다.';
                 openAlert('block')
             }
+
+            document.getElementById('close').addEventListener('click', function(){
+                document.getElementById('alert').style.display='none';
+            })
 
         </script>
 
