@@ -6,19 +6,22 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <div class="alert-box" id="alert"> Alert 박스 
-            <button onclick="closeAlert()"> 닫기 </button>
+        <div class="alert-box" id="alert"> 
+            <p id="tittle"> Alert 박스 </p>
+            <button onclick="openAlert('none')"> 닫기 </button>
         </div>
-        
-        <button onclick="openAlert()"> 버튼 </button>
+
+        <button onclick="viewAlert('아이디')"> 버튼1 </button>
+        <button onclick="viewAlert('비번')"> 버튼2 </button>
         
         <script>
-            function openAlert() {
-                document.getElementById('alert').style.display='block';
+            function openAlert(command) {
+                document.getElementById('alert').style.display=command;
             }
 
-            function closeAlert() {
-                document.getElementById('alert').style.display='none';
+            function viewAlert(content) {
+                document.getElementById('tittle').innerText = content + ' 입력 안 하셨습니다.';
+                openAlert('block')
             }
 
         </script>
