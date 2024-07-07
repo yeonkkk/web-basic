@@ -1,3 +1,4 @@
-console.log('joy');
-console.log('joy2')
-console.clear()
+let joy = 10;
+console.log(joy);
+joy = '조이';
+console.log(joy);
