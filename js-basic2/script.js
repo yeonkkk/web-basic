@@ -1,19 +1,10 @@
-// 가능 (호이스팅 O)
-sayHello() 
+const inputType = document.querySelector("#typing");
+const inputClick = document.querySelector("#push");
 
-// 불가 (호이스팅 X)
-// sayBye() 
-
-function sayHello() {
-    let hello = "Hello"
-    console.log(hello)
+inputType.onkeydown = function() {
+    console.log("타이핑되고 있어요.");
 }
 
-sayHello()
-
-// 익명 함수
-const sayBye = function() {
-    console.log("Bye")
+inputClick.onclick = function() {
+    console.log("클릭되고 있어요.");
 }
-
-sayBye()
