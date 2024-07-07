@@ -1,14 +1,14 @@
-let data;
-console.log(data); // undefined
+// console.log(document.querySelector('h2'));
+// console.log(document.querySelector('p'));
+// console.log(document.querySelector('#text'));
+// console.log(document.querySelector('.paragraph'));
 
-data = "Hello";
-console.log(data); // Hello
+// console.log(document.getElementById('text'));
+// console.log(document.getElementById('p')); // null
 
-data = null;
-console.log(data); // null
+const h2 = document.querySelector('h2');
+const p = document.getElementById('text');
 
-let data2 = true;
-console.log(typeof data2);
-
-data2 = false;
-console.log(data2);
+console.log(h2.textContent);
+h2.textContent = "헬로우 여러분!";
+console.log(h2.textContent);
