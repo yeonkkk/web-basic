@@ -1,13 +1,9 @@
-let data;
-data = 5;
-console.log(data);
-data = 3;
+let number = 21;
+// let player = "joy";
+let player = window.prompt("좋아하는 선수 입력");
 
-// 상수 값을 변경해서 에러
-// const data2 = 4;
-// console.log(data2);
-// data2 = 3;
-
-const promptMessage = "프롬프트 표시 문자";
-const result = window.prompt(promptMessage)
-console.log(result)
+// 템플릿 리터럴 사용
+// 변수, 메소드 다 상관 X
+console.log(
+    `제가 좋아하는 선수는 ${player}, 그의 등번호는 ${number}`
+)
